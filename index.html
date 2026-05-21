@@ -1,345 +1,459 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full antialiased dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oxiom - Free Roblox Script Hub | Premium Roblox Script</title>
-    <meta name="description" content="Oxiom is the best free Roblox script hub. Fast, reliable and feature-rich script hub for popular games including Grow a Garden, Dead Rails, 99 Nights in the Forest, Ink Game, Forsaken, and Build a Plane.">
-    <meta name="keywords" content="roblox Oxiom script, roblox script hub, Oxiom script hub, Oxiom roblox, free roblox script, roblox exploits, roblox cheats, roblox fisch script, roblox dead rails script, roblox forsaken script, roblox grow a garden script">
-    <meta name="author" content="Oxiom">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-        
-    <!-- Custom Font Definitions -->
+    <title>Apsent</title>
+    <meta name="description" content="unemployed & not a fullstack dev">
+   
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
-        /* cyrillic-ext */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 400;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh0NSDulI.woff2) format('woff2');
-          unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background-color: #000000;
         }
-        /* cyrillic */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 400;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh2dSDulI.woff2) format('woff2');
-          unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        /* Custom scannable scrollbar architecture */
+        ::-webkit-scrollbar {
+            width: 6px;
         }
-        /* greek-ext */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 400;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh0dSDulI.woff2) format('woff2');
-          unicode-range: U+1F00-1FFF;
+        ::-webkit-scrollbar-track {
+            background: #09090b;
         }
-        /* greek */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 400;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh3tSDulI.woff2) format('woff2');
-          unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+        ::-webkit-scrollbar-thumb {
+            background: #27272a;
+            border-radius: 3px;
         }
-        /* symbols2 */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 400;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bhZ_Wmh2uX.woff2) format('woff2');
-          unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
-        }
-        /* latin-ext */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 400;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh09SDulI.woff2) format('woff2');
-          unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-        }
-        /* latin */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 400;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh3dSD.woff2) format('woff2');
-          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
-        /* cyrillic-ext */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 500;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh0NSDulI.woff2) format('woff2');
-          unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-        }
-        /* cyrillic */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 500;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh2dSDulI.woff2) format('woff2');
-          unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-        }
-        /* greek-ext */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 500;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh0dSDulI.woff2) format('woff2');
-          unicode-range: U+1F00-1FFF;
-        }
-        /* greek */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 500;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh3tSDulI.woff2) format('woff2');
-          unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-        }
-        /* symbols2 */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 500;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bhZ_Wmh2uX.woff2) format('woff2');
-          unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
-        }
-        /* latin-ext */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 500;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh09SDulI.woff2) format('woff2');
-          unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-        }
-        /* latin */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 500;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh3dSD.woff2) format('woff2');
-          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
-        /* cyrillic-ext */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 600;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh0NSDulI.woff2) format('woff2');
-          unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-        }
-        /* cyrillic */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 600;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh2dSDulI.woff2) format('woff2');
-          unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-        }
-        /* greek-ext */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 600;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh0dSDulI.woff2) format('woff2');
-          unicode-range: U+1F00-1FFF;
-        }
-        /* greek */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 600;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh3tSDulI.woff2) format('woff2');
-          unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-        }
-        /* symbols2 */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 600;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bhZ_Wmh2uX.woff2) format('woff2');
-          unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
-        }
-        /* latin-ext */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 600;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh09SDulI.woff2) format('woff2');
-          unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-        }
-        /* latin */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 600;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh3dSD.woff2) format('woff2');
-          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
-        /* cyrillic-ext */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 700;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh0NSDulI.woff2) format('woff2');
-          unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-        }
-        /* cyrillic */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 700;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh2dSDulI.woff2) format('woff2');
-          unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-        }
-        /* greek-ext */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 700;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh0dSDulI.woff2) format('woff2');
-          unicode-range: U+1F00-1FFF;
-        }
-        /* greek */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 700;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh3tSDulI.woff2) format('woff2');
-          unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-        }
-        /* symbols2 */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 700;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bhZ_Wmh2uX.woff2) format('woff2');
-          unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
-        }
-        /* latin-ext */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 700;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh09SDulI.woff2) format('woff2');
-          unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-        }
-        /* latin */
-        @font-face {
-          font-family: 'Fira Code';
-          font-style: normal;
-          font-weight: 700;
-          font-display: swap;
-          src: ur[](https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh3dSD.woff2) format('woff2');
-          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        .splash-transition {
+            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
     </style>
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://oxiom.script.cl/">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rifton.top/">
-    <meta property="og:title" content="Oxiom - Free Roblox Script Hub | Premium Roblox Script">
-    <meta property="og:description" content="Oxiom is the best free Roblox script hub. Fast, reliable and feature-rich script hub for popular games including Grow a Garden, Dead Rails, 99 Nights in the Forest, Ink Game, Forsaken, and Build a Plane.">
-    <meta property="og:image" content="https://tr.rbxcdn.com/180DAY-c010566cf71816eb7b727ecf935d6e67/768/432/Image/Webp/noFilter">
-    <meta property="og:site_name" content="Oxiom Script Hub">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://rifton.top/">
-    <meta name="twitter:title" content="Oxiom - Free Roblox Script Hub | Premium Roblox Script">
-    <meta name="twitter:description" content="Oxiom is the best free Roblox script hub. Fast, reliable and feature-rich script hub for popular games including Grow a Garden, Dead Rails, 99 Nights in the Forest, Ink Game, Forsaken, and Build a Plane.">
-    <meta name="twitter:image" content="https://tr.rbxcdn.com/180DAY-c010566cf71816eb7b727ecf935d6e67/768/432/Image/Webp/noFilter">
-    
-    <!-- Structure data for SEO -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Oxiom - Free Roblox Script Hub",
-        "applicationCategory": "GameModification",
-        "operatingSystem": "Windows",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD"
-        },
-        "description": "Oxiom is the best free Roblox script hub. Fast, reliable and feature-rich script hub for popular games including Grow a Garden, Dead Rails, 99 Nights in the Forest, Ink Game, Forsaken, and Build a Plane.",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.8",
-          "ratingCount": "142"
-        }
-      }
-    </script>
-    
-    <!-- Additional structured data for FAQPage -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [{
-          "@type": "Question",
-          "name": "What is Oxiom Script Hub?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oxiom is the best free Roblox script hub. Fast, reliable and feature-rich script hub for popular games including Grow a Garden, Dead Rails, 99 Nights in the Forest, Ink Game, Forsaken, and Build a Plane."
-          }
-        }, {
-          "@type": "Question",
-          "name": "How do I use Oxiom Script?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Simply copy our script, paste it into your executor, and enjoy the advantages that Oxiom offers. Fast, reliable, and completely free."
-          }
-        }, {
-          "@type": "Question",
-          "name": "Which Roblox games are supported by Oxiom?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oxiom currently supports popular games including Grow a Garden, Dead Rails, 99 Nights in the Forest, Ink Game, Forsaken, and Build a Plane, with more games added regularly."
-          }
-        }]
-      }
-    </script>
-    <link rel="stylesheet" crossorigin="" href="css/index.css">
 </head>
+<body class="min-h-full overflow-x-hidden relative select-none text-zinc-400">
 
-<body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="js/gptengineer.js" type="module"></script>
+    <canvas id="starfield" class="pointer-events-none fixed inset-0 z-0"></canvas>
+
+    <div id="splash-screen" onclick="dismissSplash()" class="splash-transition fixed inset-0 z-50 flex flex-col items-center justify-center bg-transparent cursor-pointer p-4">
+        <div class="flex flex-col items-center text-center space-y-6 max-w-lg w-full select-none">
+           
+            <div class="text-zinc-400 opacity-90 pb-2 drop-shadow-[0_0_15px_rgba(255,255,255,0.15)]">
+                <svg class="w-10 h-10 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+            </div>
+
+            <div class="space-y-2">
+                <h1 class="text-4xl font-normal text-zinc-100 tracking-tight drop-shadow-md">Apsent</h1>
+                <p class="text-sm text-zinc-400 font-light tracking-wide">unemployed • 1 project • not a fullstack dev</p>
+            </div>
+
+            <div class="pt-4 flex items-center gap-3">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                </span>
+                <span class="text-sm text-zinc-400 font-light">
+                    offline &amp; balling you…
+                </span>
+            </div>
+
+            <div class="text-[10px] text-zinc-500 font-light tracking-widest pt-12 animate-pulse uppercase">
+                click anywhere to enter
+            </div>
+        </div>
+    </div>
+
+    <div id="main-portfolio" class="hidden opacity-0 scale-[0.98] splash-transition relative z-10 flex min-h-screen items-center justify-center p-4 sm:p-6">
+       
+        <div class="w-full max-w-[720px] min-h-[480px] bg-[#050505]/85 border border-zinc-900/80 rounded-2xl p-6 sm:p-10 backdrop-blur-md flex flex-col justify-between shadow-2xl">
+           
+            <div>
+                <div class="flex items-center justify-between border-b border-zinc-900/50 pb-6 mb-8">
+                    <nav class="flex items-center gap-5 sm:gap-6 text-sm font-medium">
+                        <button onclick="switchTab('home')" id="tab-home" class="text-zinc-100 border-b-2 border-zinc-200 pb-1 transition-all cursor-pointer">home</button>
+                        <button onclick="switchTab('profile')" id="tab-profile" class="text-zinc-500 hover:text-zinc-300 pb-1 transition-all cursor-pointer">profile</button>
+                        <button onclick="switchTab('about')" id="tab-about" class="text-zinc-500 hover:text-zinc-300 pb-1 transition-all cursor-pointer">about</button>
+                        <button onclick="switchTab('projects')" id="tab-projects" class="text-zinc-500 hover:text-zinc-300 pb-1 transition-all cursor-pointer">projects</button>
+                        <button onclick="switchTab('contact')" id="tab-contact" class="text-zinc-500 hover:text-zinc-300 pb-1 transition-all cursor-pointer">contact</button>
+                    </nav>
+
+                    <div class="flex items-center gap-1.5 bg-zinc-900/40 border border-zinc-800/60 rounded-full px-3 py-1 text-xs text-zinc-500 font-medium">
+                        <svg class="w-3 h-3 text-zinc-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z" />
+                        </svg>
+                        <span>4</span>
+                    </div>
+                </div>
+
+                <div id="panel-home" class="tab-panel space-y-6">
+                    <div class="space-y-2">
+                        <div class="text-zinc-500 opacity-80 pb-1">
+                            <svg class="w-8 h-8 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h1 class="text-4xl font-bold text-zinc-100 tracking-tight mb-1">Apsent</h1>
+                        <p class="text-sm tracking-wide text-zinc-400 font-light">unemployed • 1 project • not a fullstack dev</p>
+                    </div>
+
+                    <div class="pt-6 flex items-center gap-3 bg-[#09090b]/40 border border-zinc-900/60 rounded-xl p-4 w-fit">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                        </span>
+                        <span class="text-sm text-zinc-400 font-light">
+                            offline &amp; balling you…
+                        </span>
+                    </div>
+                </div>
+
+                <div id="panel-profile" class="tab-panel hidden space-y-6">
+                    <div>
+                        <h1 class="text-4xl font-bold text-zinc-100 tracking-tight mb-2">profile</h1>
+                        <p class="text-sm tracking-wide text-zinc-500">network identities & status cards</p>
+                    </div>
+
+                    <div class="space-y-3 pt-2">
+                        <div class="flex items-center gap-4 bg-[#09090b]/60 border border-zinc-900 rounded-xl p-4">
+                            <div class="relative w-12 h-12 rounded-lg overflow-hidden bg-zinc-800 flex-shrink-0">
+                                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=150&auto=format&fit=crop&q=60" alt="Avatar" class="w-full h-full object-cover grayscale">
+                                <span class="absolute bottom-0 right-0 block h-2.5 w-2.5 rounded-full bg-red-500 ring-2 ring-[#09090b]"></span>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-medium text-zinc-200">Apsent</h4>
+                                <p class="text-xs text-zinc-500">@itz.apsent</p>
+
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between bg-[#09090b]/60 border border-zinc-900 rounded-xl p-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-7 h-7 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-zinc-200">McDonalds Job Application Support</h4>
+                                    <p class="text-xs text-zinc-500 flex items-center gap-1.5 mt-0.5">
+                                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-red-500"></span> 0 online
+                                        <span class="inline-block w-1 h-1 rounded-full bg-zinc-700"></span> 1 member
+                                    </p>
+                                </div>
+                            </div>
+                            <button class="bg-zinc-900 hover:bg-zinc-800 text-zinc-300 border border-zinc-800 text-xs px-4 py-1.5 rounded-md font-medium tracking-wide transition-all cursor-pointer">join</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="panel-about" class="tab-panel hidden space-y-6">
+                    <div>
+                        <h1 class="text-4xl font-bold text-zinc-100 tracking-tight mb-2">about</h1>
+                        <p class="text-sm tracking-wide text-zinc-500">literally whatever</p>
+                    </div>
+                    <div class="text-sm text-zinc-400 leading-relaxed space-y-4 pt-2 font-light">
+                        <p>i spend most of my free time staring at the microwave while it heats up my hot pockets. sometimes i like to watch paint dry, it's pretty thrilling.</p>
+                        <p>my favorite color is clear. i once tried to download more RAM off the internet and now my computer smells like burning plastic.</p>
+                        <p>i don't actually know how to code, i just copy-pasted this entire website from chatgpt. anyway, still waiting for my dad to come back with the milk.</p>
+                    </div>
+                </div>
+
+                <div id="panel-projects" class="tab-panel hidden space-y-6">
+                    <div>
+                        <h1 class="text-4xl font-bold text-zinc-100 tracking-tight mb-2">projects</h1>
+                        <p class="text-sm tracking-wide text-zinc-500">the 1 thing i made and some missing files</p>
+                    </div>
+                   
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                        <div class="bg-[#09090b]/50 border border-zinc-900 rounded-xl p-4 space-y-1 hover:border-zinc-800/80 transition-colors">
+                            <h4 class="text-sm font-medium text-zinc-200">hello_world.py</h4>
+                            <p class="text-xs text-zinc-500 leading-relaxed font-light">my only real project. it prints hello world but sometimes it crashes.</p>
+                        </div>
+                        <div class="bg-[#09090b]/50 border border-zinc-900 rounded-xl p-4 space-y-1 hover:border-zinc-800/80 transition-colors">
+                            <h4 class="text-sm font-medium text-zinc-200">unknown</h4>
+                            <p class="text-xs text-zinc-500 leading-relaxed font-light">i forgot my github password so i can't check what this is.</p>
+                        </div>
+                        <div class="bg-[#09090b]/50 border border-zinc-900 rounded-xl p-4 space-y-1 hover:border-zinc-800/80 transition-colors">
+                            <h4 class="text-sm font-medium text-zinc-200">[REDACTED]</h4>
+                            <p class="text-xs text-zinc-500 leading-relaxed font-light">my mom said i can't share this one on the internet.</p>
+                        </div>
+                        <div class="bg-[#09090b]/50 border border-zinc-900 rounded-xl p-4 space-y-1 hover:border-zinc-800/80 transition-colors">
+                            <h4 class="text-sm font-medium text-zinc-200">Untitled-1.txt</h4>
+                            <p class="text-xs text-zinc-500 leading-relaxed font-light">idk man, it's just an empty file on my desktop that i refuse to delete.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="panel-contact" class="tab-panel hidden space-y-6">
+                    <div>
+                        <h1 class="text-4xl font-bold text-zinc-100 tracking-tight mb-2">contact</h1>
+                        <p class="text-sm tracking-wide text-zinc-500">please do not reach out</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                        <a href="#" class="flex items-center justify-between bg-[#09090b]/50 border border-zinc-900 rounded-xl p-4 group hover:border-zinc-800 transition-colors cursor-not-allowed">
+                            <div class="flex items-center gap-3.5">
+                                <div class="w-10 h-10 bg-zinc-900 rounded-lg flex items-center justify-center text-zinc-400 group-hover:text-zinc-200 border border-zinc-800/40">
+                                    <i class="fa-regular fa-envelope text-sm"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-xs font-medium text-zinc-300">email</h5>
+                                    <p class="text-xs text-zinc-500">no-reply@balling.com</p>
+
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ban text-zinc-600 text-xs pr-1"></i>
+                        </a>
+
+                        <a href="#" class="flex items-center justify-between bg-[#09090b]/50 border border-zinc-900 rounded-xl p-4 group hover:border-zinc-800 transition-colors cursor-not-allowed">
+                            <div class="flex items-center gap-3.5">
+                                <div class="w-10 h-10 bg-zinc-900 rounded-lg flex items-center justify-center text-zinc-400 group-hover:text-zinc-200 border border-zinc-800/40">
+                                    <i class="fa-brands fa-github text-sm"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-xs font-medium text-zinc-300">github</h5>
+                                    <p class="text-xs text-zinc-500">@Ctrl-C-Ctrl-V</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ban text-zinc-600 text-xs pr-1"></i>
+                        </a>
+
+                        <a href="#" class="flex items-center justify-between bg-[#09090b]/50 border border-zinc-900 rounded-xl p-4 group hover:border-zinc-800 transition-colors cursor-not-allowed">
+                            <div class="flex items-center gap-3.5">
+                                <div class="w-10 h-10 bg-zinc-900 rounded-lg flex items-center justify-center text-zinc-400 group-hover:text-zinc-200 border border-zinc-800/40">
+                                    <i class="fa-brands fa-discord text-sm"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-xs font-medium text-zinc-300">discord</h5>
+                                    <p class="text-xs text-zinc-500">@literally_who</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ban text-zinc-600 text-xs pr-1"></i>
+                        </a>
+
+                        <a href="#" class="flex items-center justify-between bg-[#09090b]/50 border border-zinc-900 rounded-xl p-4 group hover:border-zinc-800 transition-colors cursor-not-allowed">
+                            <div class="flex items-center gap-3.5">
+                                <div class="w-10 h-10 bg-zinc-900 rounded-lg flex items-center justify-center text-zinc-400 group-hover:text-zinc-200 border border-zinc-800/40">
+                                    <i class="fa-solid fa-dove text-sm"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-xs font-medium text-zinc-300">pigeon</h5>
+                                    <p class="text-xs text-zinc-500">send to nearest window</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ban text-zinc-600 text-xs pr-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function dismissSplash() {
+            const splash = document.getElementById('splash-screen');
+            const mainContent = document.getElementById('main-portfolio');
+
+            splash.classList.add('opacity-0', 'scale-95');
+           
+            setTimeout(() => {
+                splash.classList.add('hidden');
+                mainContent.classList.remove('hidden');
+                mainContent.offsetHeight; // Force design reflow execution
+                mainContent.classList.remove('opacity-0', 'scale-[0.98]');
+                mainContent.classList.add('opacity-100', 'scale-100');
+            }, 600);
+        }
+
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-panel').forEach(panel => {
+                panel.classList.add('hidden');
+            });
+           
+            document.querySelectorAll('nav button').forEach(btn => {
+                btn.className = "text-zinc-500 hover:text-zinc-300 pb-1 transition-all cursor-pointer";
+            });
+
+            document.getElementById(`panel-${tabId}`).classList.remove('hidden');
+            document.getElementById(`tab-${tabId}`).className = "text-zinc-100 border-b-2 border-zinc-200 pb-1 transition-all cursor-pointer";
+        }
+    </script>
+
+    <script>
+        const canvas = document.getElementById('starfield');
+        const ctx = canvas.getContext('2d');
+
+        let width = canvas.width = window.innerWidth;
+        let height = canvas.height = window.innerHeight;
+
+        let nebulaX = width * 0.55;
+        let nebulaY = height * 0.45;
+
+        window.addEventListener('resize', () => {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+            nebulaX = width * 0.55;
+            nebulaY = height * 0.45;
+        });
+
+        const stars = [];
+        const comets = [];
+       
+        const maxStars = 250;
+        const maxComets = 12;
+
+        // Snowfall Stars Architecture
+        class FallingStar {
+            constructor(isInitial = false) {
+                this.x = Math.random() * width;
+                this.y = isInitial ? Math.random() * height : -10;
+                this.size = Math.random() * Math.random() * 1.6 + 0.4;
+                this.alpha = Math.random() * 0.6 + 0.3;
+               
+                this.speedY = Math.random() * 0.3 + 0.15;
+                this.speedX = (Math.random() * 0.1 - 0.05);
+                this.pulseSpeed = Math.random() * 0.005 + 0.002;
+            }
+            draw() {
+                ctx.fillStyle = `rgba(245, 245, 250, ${this.alpha})`;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+            update() {
+                this.y += this.speedY;
+                this.x += this.speedX;
+
+                this.alpha += this.pulseSpeed;
+                if (this.alpha > 0.95 || this.alpha < 0.2) {
+                    this.pulseSpeed = -this.pulseSpeed;
+                }
+
+                if (this.y > height + 10) {
+                    this.y = -10;
+                    this.x = Math.random() * width;
+                    this.alpha = Math.random() * 0.6 + 0.3;
+                    this.speedY = Math.random() * 0.3 + 0.15;
+                }
+                if (this.x > width) this.x = 0;
+                if (this.x < 0) this.x = width;
+            }
+        }
+
+        // Gas-Trail Comet Architecture
+        class CosmicGlowComet {
+            constructor(isInitial = false) {
+                this.reset();
+                if (isInitial) {
+                    this.x = Math.random() * width;
+                    this.y = Math.random() * (height * 0.7);
+                }
+            }
+            reset() {
+                if (Math.random() > 0.5) {
+                    this.x = Math.random() * (width * 0.7) - (width * 0.2);
+                    this.y = Math.random() * -(height * 0.1);
+                } else {
+                    this.x = Math.random() * -(width * 0.1);
+                    this.y = Math.random() * (height * 0.5) - (height * 0.1);
+                }
+               
+                this.length = Math.random() * 120 + 50;
+                this.speed = Math.random() * 3.5 + 1.2;
+                this.angle = (Math.PI / 4) + (Math.random() * 0.06 - 0.03);
+                this.opacity = Math.random() * 0.5 + 0.35;
+                this.radius = Math.random() * 1.2 + 0.5;
+            }
+            draw() {
+                const tailX = this.x - Math.cos(this.angle) * this.length;
+                const tailY = this.y - Math.sin(this.angle) * this.length;
+
+                // Layer 1: Core Blue Gas Emission Tail
+                ctx.lineWidth = this.radius * 2.5;
+                const gasGradient = ctx.createLinearGradient(this.x, this.y, tailX, tailY);
+                gasGradient.addColorStop(0, `rgba(59, 130, 246, ${this.opacity * 0.85})`);      
+                gasGradient.addColorStop(0.2, `rgba(29, 78, 216, ${this.opacity * 0.4})`);      
+                gasGradient.addColorStop(0.6, `rgba(14, 116, 144, ${this.opacity * 0.1})`);      
+                gasGradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
+               
+                ctx.strokeStyle = gasGradient;
+                ctx.beginPath();
+                ctx.moveTo(this.x, this.y);
+                ctx.lineTo(tailX, tailY);
+                ctx.stroke();
+
+                // Layer 2: Central Nucleus Filament
+                ctx.lineWidth = this.radius * 0.8;
+                const coreGradient = ctx.createLinearGradient(this.x, this.y, tailX, tailY);
+                coreGradient.addColorStop(0, `rgba(255, 255, 255, ${this.opacity * 0.95})`);
+                coreGradient.addColorStop(0.15, `rgba(219, 234, 254, ${this.opacity * 0.6})`);    
+                coreGradient.addColorStop(0.5, `rgba(59, 130, 246, ${this.opacity * 0.15})`);
+                coreGradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
+
+                ctx.strokeStyle = coreGradient;
+                ctx.beginPath();
+                ctx.moveTo(this.x, this.y);
+                ctx.lineTo(tailX, tailY);
+                ctx.stroke();
+            }
+            update() {
+                this.x += Math.cos(this.angle) * this.speed;
+                this.y += Math.sin(this.angle) * this.speed;
+               
+                if (this.x > width + 150 || this.y > height + 150) {
+                    this.reset();
+                }
+            }
+        }
+
+        // Initialize Arrays
+        for (let i = 0; i < maxStars; i++) {
+            stars.push(new FallingStar(true));
+        }
+        for (let i = 0; i < maxComets; i++) {
+            comets.push(new CosmicGlowComet(true));
+        }
+
+        function renderLoop() {
+            ctx.fillStyle = '#010103';
+            ctx.fillRect(0, 0, width, height);
+
+            const diagonalLength = Math.max(width, height);
+            const nebulaGradient = ctx.createRadialGradient(
+                nebulaX, nebulaY, diagonalLength * 0.05,
+                nebulaX, nebulaY, diagonalLength * 0.75
+            );
+            nebulaGradient.addColorStop(0, 'rgba(20, 24, 48, 0.32)');
+            nebulaGradient.addColorStop(0.2, 'rgba(12, 14, 30, 0.2)');
+            nebulaGradient.addColorStop(0.5, 'rgba(6, 4, 16, 0.1)');
+            nebulaGradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
+           
+            ctx.fillStyle = nebulaGradient;
+            ctx.fillRect(0, 0, width, height);
+
+            stars.forEach(star => {
+                star.update();
+                star.draw();
+            });
+
+            comets.forEach(comet => {
+                comet.update();
+                comet.draw();
+            });
+
+            requestAnimationFrame(renderLoop);
+        }
+        renderLoop();
+    </script>
 </body>
 </html>
